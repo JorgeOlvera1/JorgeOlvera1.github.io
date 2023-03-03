@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Jorge Olvera | Portafolio</title>
+	<link href="portfolio-css/portfolio-style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+	<link rel="icon" href="portfolio-img/logo.png">
+	<script src="portfolio-js/portfolio-script.js" defer></script>
+	<style>
+	    #ultimo + div {
+	        visibility: hidden;
+	    }
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div class="logo">
+				<p>Jorge Olvera</p>
+			</div>
+			<nav>
+				<ul class="nav-bar">
+					<div class="bg"></div>
+					<li><a class="nav-link" href="#home">Inicio</a></li>
+					<li><a class="nav-link" href="#projects">Proyectos</a></li>
+					<li><a class="nav-link" href="#contact">Contacto</a></li>
+				</ul>
+				<div class="hamburger" onclick="desplegar()">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<div id="home">
+				<div class="filter"></div>
+				<section class="intro">
+					<h2>Jorge Olvera
+						<hr>
+					</h2>
+					<p>Estudiante de ingeniería en sistemas computacionales</p>
+				</section>
+			</div>
+
+			<div id="projects">
+				<h3>Mis proyectos
+					<hr>
+				</h3>
+				<div class="work-box">
+					<div class="work">
+						<div class="card" onclick='window.location.href="../calculator/index.html"'>
+							<img class="work-img" src="../calculator/img/calculator.ico">
+							<div class="work-content">Calculadora</div>
+						</div>
+						<div class="card" onclick='window.location.href="../chronometer/index.html"'>
+							<img class="work-img" src="../chronometer/img/icon.ico">
+							<div class="work-content">Cronómetro</div>
+						</div>
+						<div class="card" onclick='window.location.href="../color-palette/index.html"'>
+							<img class="work-img" src="../color-palette/img/favicon.ico">
+							<div class="work-content">Paleta de colores</div>
+						</div>
+						<div class="card" onclick='window.location.href="../length-converter/index.html"'>
+							<img class="work-img" src="../length-converter/img/icon.ico">
+							<div class="work-content">Conversor de unidades de medida</div>
+						</div>
+						<div class="card" onclick='window.location.href="../password-generator/index.html"'>
+							<img class="work-img" src="../password-generator/img/logo.ico">
+							<div class="work-content">Generador de contraseñas</div>
+						</div>
+						<div class="card" onclick='window.location.href="../pokedex/index.html"'>
+							<img class="work-img" src="../pokedex/img/pikachu.ico">
+							<div class="work-content">Pokédex</div>
+						</div>
+						<div class="card" onclick='window.location.href="../slot-machine/index.html"'>
+							<img class="work-img" src="../slot-machine/img/icon.ico">
+							<div class="work-content">Máquina tragamonedas</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="contact">
+				<h3>Contacto
+					<hr>
+				</h3>
+				<form action="https://formsubmit.co/18c6dedec76c84c1ed3938500d7c1693" method="POST">
+					<label for="name">Nombre:</label>
+					<input type="text" id="name" name="name" required>
+
+					<label for="email">Correo electrónico:</label>
+					<input type="email" id="email" name="email" required>
+
+					<label for="subject">Asunto:</label>
+					<input type="text" id="subject" name="subject" required>
+
+					<label for="message">Mensaje:</label>				
+					<textarea id="message" name="message" required></textarea>
+
+					<input type="hidden" name="_next" value="https://jorgeolvera1.github.io/">
+					<input type="hidden" name="_captcha" value="false">
+					<button>Enviar</button>
+				</form>
+			</div>
+
+		</main>
+
+		<footer>Copyright © 2023. Jorge Olvera</footer>
+	</div>
+
+	<div id="ultimo"></div>
+</body>
+
+</html>
